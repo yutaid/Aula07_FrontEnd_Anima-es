@@ -1,0 +1,59 @@
+#grad {
+    background-image: radial-gradient(red, yellow);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    padding: 20px;
+}
+div.caixaBranca {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+    position: absolute;
+    left: 200px;
+    top: 350px;
+}
+div.caixaVermelha {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    z-index: 2;
+    left: 200px;
+    top: 350px;
+    transition: 2s;
+}
+/* div.caixaVermelha:hover {
+    transform: translate(-10px, 20px);
+    transform: rotate(67deg);
+    transform: scale(3,5);
+    transform: skew(20deg, 10deg);
+} */
+div.transition {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    /* transition: height 1s, width 0.5s; ou all*/
+    transition: all 1s;
+}
+div.transition:hover{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    background-color: cyan;
+}
+h1 {
+    font-size: 40px;
+    animation: aparecer 2s infinite ease-in-out 5s;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        color: green
+    }
+    50% {
+        opacity: 1;
+        color: red;
+    }
+}
